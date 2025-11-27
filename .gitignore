@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# --- System Files ---
+.DS_Store
+Thumbs.db
+
+# --- Android Native Project ---
+android/app/build/
+android/.gradle/
+android/local.properties
+android/captures/
+
+# --- iOS Native Project ---
+ios/App/App.xcworkspace/xcuserdata/
+ios/DerivedData/
+
+# --- Capacitor ---
+android/app/src/main/assets/public/
+ios/App/public/
+
