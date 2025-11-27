@@ -1,0 +1,47 @@
+/* Base Capacitor Tweaks */
+body {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    user-select: none;
+    padding-bottom: 120px;
+    /* Space for fixed input */
+}
+
+/* Smooth Interactions */
+.task-item {
+    transition: all 0.2s ease;
+}
+
+.task-item:active {
+    transform: scale(0.98);
+}
+
+/* Checkbox Animation */
+.check-circle {
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Filter Tab Active State */
+.filter-btn.active {
+    background-color: #1e293b;
+    /* slate-800 */
+    color: white;
+    box-shadow: 0 10px 15px -3px rgba(226, 232, 240, 1);
+}
+
+.filter-btn {
+    background-color: white;
+    color: #64748b;
+    /* slate-500 */
+    border: 1px solid #e2e8f0;
+}
+
+/* Hide Scrollbar for tabs */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
