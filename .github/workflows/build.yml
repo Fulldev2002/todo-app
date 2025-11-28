@@ -15,15 +15,10 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
         with:
-          node-version: lts/*
-
-      - name: Set up npm
-        uses: npm/action-setup@v4
-        with:
-          version: 8
+          node-version: 18
 
       - name: Install dependencies
         run: npm install
